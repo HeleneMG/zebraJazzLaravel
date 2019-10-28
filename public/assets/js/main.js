@@ -1,11 +1,13 @@
+console.log("hola");
 //SCROLLREVEAL H1
 ScrollReveal().reveal('h1', {
     duration: 200,
     distance: '5px',
-    origin: 'left',
+    origin: 'top',
     delay: 200,
     reset: true
 });
+
 
 //TO TOP & FIXED NAVBAR
 window.onscroll = function () { fixedNavbar(), scrollFunction() };

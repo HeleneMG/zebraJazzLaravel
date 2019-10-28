@@ -10,6 +10,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="icon" type="image/png" href="<?php echo url('/assets/img/logo_zebrajazz.png') ?>" />
         <link href="https://fonts.googleapis.com/css?family=Poller+One|Roboto|Montserrat:300,800&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link href="assets/css/cssbox.css" rel="stylesheet">
@@ -51,7 +52,29 @@
         </header>
 
         <main>
+            <section class="concerts">
+                <h2>Nos précédents concerts</h2>
+                <h3>Fête de la musique à Salon de Provence 21 juin 2019 </h3>
+                <img src="assets/img/concert1.jpg" alt="fête de la musique salon 2019">
 
+                <h3>Concert à Lançon de Provence avril 2019</h3>
+                <img src="assets/img/concert2.jpg" alt="concert Lançon avril 2019">
+
+                <h3>Concert à Salon de Provence mars 2019</h3>
+                <img src="assets/img/concert3.jpg" alt="concert Salon mars 2019">
+
+                <h3>Concert à Peynier mars 2019 -L'histoire du Jazz en noir et blanc</h3>
+                <img src="assets/img/concert4.jpg" alt="concert Peynier mars 2019">
+
+                <h3>Concert à Lançon de Provence septembre 2018 (video)</h3>
+                <div class="video">
+                    <iframe src="https://www.youtube.com/embed/YOEjPa-91dI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+
+                <h3>Concert à Orgon novembre 2018</h3>
+                <img src="assets/img/concert6.jpg" alt="concert Orgon mars 2019">
+
+            </section>
         </main>
 
         <footer>
@@ -67,7 +90,7 @@
         </footer>
 
         <div id="toTop">
-            <a class="top" href="#"><img src="assets/img/arrow6.png" alt="Retourner en haut">
+            <a class="top" href="#"><img src="assets/img/arrow6.png" alt="Retourner en haut"></a>
         </div>
 
         <script src="<?php echo url('/assets/js/main.js') ?>"></script>
