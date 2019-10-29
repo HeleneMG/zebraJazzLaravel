@@ -199,7 +199,6 @@ input, textarea, select, button {
 }
 form button{
     width: 50%;
-    height: 40px;
     margin: 10px auto;
 }
 
@@ -241,10 +240,21 @@ footer h2{
     font-family: 'Poller One', cursive;
     background-color: black;
     color: white;   
+    box-shadow: none;
 }
+
 #rights{
-    font-size: 0.9em;
+    font-size: 1em;
 }
+
+#rights button{
+    padding: 0;
+    background-color: black;
+    border: none;
+    margin: 0;
+    font-size: 1em;
+}
+
 
 @media screen and (min-width : 430px){
     body{

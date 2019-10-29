@@ -1,0 +1,86 @@
+        <!DOCTYPE html>
+        <html lang="fr">
+
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <meta http-equiv="X-UA-Compatible" content="ie=edge">
+                <script src="https://unpkg.com/scrollreveal"></script>
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+                <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+                <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+                <link rel="icon" type="image/png" href="<?php echo url('/assets/img/logo_zebrajazz.png') ?>" />
+                <link href="https://fonts.googleapis.com/css?family=Poller+One|Roboto|Montserrat:300,800&display=swap" rel="stylesheet">
+                <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+                <link rel="stylesheet" href="assets/css/style.css">
+                <title>Accueil - ZebraJazz</title>
+            </head>
+
+            <body>
+                @section('header')
+                <header>
+                    <h1 id="zebra">ZEBRAJAZZ QUINTET</h1>
+                    <nav class="une">
+                        <div class="entete hamburger">
+                            <i class="material-icons menuHamb">menu</i>
+                            <ul class="menuNav">
+                                <i class="material-icons md-18 arrow-back">arrow_back</i>
+                                <li><a href="<?php echo url('/') ?>">Accueil</a></li>
+                                <li><a href="<?php echo url('/bio') ?>">Bio</a></li>
+                                <li><a href="<?php echo url('/agenda') ?>">Agenda</a></li>
+                                <li><a href="<?php echo url('/concerts') ?>">Concerts</a></li>
+                                <li><a href="<?php echo url('/galerie') ?>">Galerie</a></li>
+                                <li><a href="<?php echo url('/affiches') ?>">Affiches</a></li>
+                                <li><a href="<?php echo url('/contact') ?>">Contact</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <nav class="deux">
+                        <div class="entete desktop">
+                            <ul>
+                                <li><a href="<?php echo url('/') ?>">Accueil</a></li>
+                                <li><a href="<?php echo url('/bio') ?>">Bio</a></li>
+                                <li><a href="<?php echo url('/agenda') ?>">Agenda</a></li>
+                                <li><a href="<?php echo url('/concerts') ?>">Concerts</a></li>
+                                <li><a href="<?php echo url('/galerie') ?>">Galerie</a></li>
+                                <li><a href="<?php echo url('/affiches') ?>">Affiches</a></li>
+                                <li><a href="<?php echo url('/contact') ?>">Contact</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </header>
+                @show
+
+                <main>
+                    @yield('content')
+                </main>
+
+                @section('footer')
+                <footer>
+                    <div class="modale-login">@extends('layouts.modale-login')</div>
+                    <ul>
+                        <li>
+                            <h2>ZebraJazz</h2>
+                        </li>
+                    </ul>
+                    <ul id="rights">
+                        <li>Tous droits réservés &copy; 2019</li>
+                        <li>Mentions legales</li>
+                        <li><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap">Admin</button></li>
+                    </ul>
+                </footer>
+
+                <div id="toTop">
+                    <a class="top" href="#"><img src="assets/img/arrow6.png" alt="Retourner en haut"></a>
+                </div>
+
+                <script src="<?php echo url('/assets/js/main.js') ?>"></script>
+                <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+            </body>
+
+        </html>
+        @show
