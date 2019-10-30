@@ -99,6 +99,10 @@ nav ul{
     border-bottom: solid 5px rgb(255, 255, 255, 0.192);
     background-color: rgb(0, 0, 0);
 }
+ul.navbar-nav{
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+}
 nav li{
     text-align: center;
     padding: 9px; 
@@ -201,6 +205,29 @@ form button{
     width: 50%;
     margin: 10px auto;
 }
+.confirmation{
+    text-align: center;
+}
+.obligatoire{
+    font-size: 0.8em; 
+    text-align: center;
+}
+.card-header{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+.card-header button{
+    margin: 0;
+    padding: 0;
+    color: black;
+    background-color: rgba(255, 255, 255, 0);
+    border: 0;
+}
+.card-header button:hover{
+    background-color: rgba(0, 0, 0, 0);
+    color: black;
+}
 
 /** TO TOP **/
 
@@ -251,8 +278,9 @@ footer h2{
     padding: 0;
     background-color: black;
     border: none;
-    margin: 0;
+    margin: 0 auto;
     font-size: 1em;
+    color: white;
 }
 
 
@@ -282,6 +310,10 @@ footer h2{
         border-left: solid 5px rgba(255, 255, 255, 0.100);
         border-right: solid 5px rgba(255, 255, 255, 0.100);
         transition: 0.3s; 
+    }
+    li.nav-item:hover{
+        background-color: rgba(255, 255, 255, 0);
+        border: none;
     }
     .bio{
         padding: 40px;
@@ -319,7 +351,7 @@ footer h2{
         top: 0;
     }
     main{
-        height: auto;
+        min-height: 50vh;
     }
     section{
         width: 45%;

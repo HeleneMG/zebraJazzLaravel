@@ -1,4 +1,6 @@
-console.log("hola que tal");
+//debug
+console.log("JS CHARGE");
+
 //SCROLLREVEAL H1
 ScrollReveal().reveal('h1', {
     duration: 200,
@@ -16,7 +18,7 @@ var sticky = navbar.offsetTop;
 
 //TO TOP BUTTON apparition
 function scrollFunction() {
-    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 100) {
+    if (document.body.scrollTop >= 100 || document.documentElement.scrollTop >= 100) {
         $(mybutton).fadeIn(700);
     } else {
         $(mybutton).fadeOut(700);
@@ -25,7 +27,8 @@ function scrollFunction() {
 
 //TO TOP BUTTON action
 mybutton.addEventListener('click', function topFunction() {
-    $("html, body").animate({ scrollTop: 0 }, 900);
+    $("html, body").animate({ scrollTop: 0 }, 1000);
+
 });
 
 //FIXED NAVBAR
@@ -66,7 +69,7 @@ $('#exampleModal').on('show.bs.modal', function (event) {
 
 //VUEJS
 var app = new Vue({
-    el: '.app1',
+    el: '.app',
     methods: {
         envoyerFormAjax: function (event) {
             // debug

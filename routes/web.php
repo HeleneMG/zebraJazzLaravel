@@ -15,8 +15,8 @@ Route::view('/contact', 'contact');
 Route::any('/contact/store', 'contactController@store');
 
 Route::view('/galerie', 'galerie');
+Route::view('/home', 'home');
 
-Route::view('/login', 'login');
 Route::view('/register', 'register');
 
 Route::any('/espace-admin', 'AnnonceController@afficherEspaceAdmin');
@@ -24,6 +24,7 @@ Route::any('/deconnexion', 'AnnonceController@deconnexion');
 
 Auth::routes();
 
+Route::view('/login', 'login');
 Route::get('/home', 'HomeController@index')->name('home');
 
 Auth::routes();
