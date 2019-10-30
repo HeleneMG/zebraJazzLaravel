@@ -49,7 +49,7 @@ h3{
     padding-top: 20px;
     text-align: center;
 }
-nav.deux{
+nav.deux, nav.deux.sticky{
     display: none;
 }
 
@@ -59,6 +59,7 @@ nav.une {
     position: fixed;
     top: 0;
 }
+
 .menuNav{
     width: 100%;
     height: 100vh;
@@ -135,7 +136,11 @@ section{
     object-fit: contain;
     padding: 10px;
 }
-
+.groupe img{
+    width: 304px;
+    height: 200px;
+    object-fit: contain;
+}
 .agenda{
     text-align: center;
 }
@@ -335,7 +340,7 @@ footer h2{
         padding : 5px 0;
         font-size: 46px;
     }
-    nav.une {
+    nav.une{
         display: none;
     }
     nav.deux{

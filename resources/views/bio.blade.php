@@ -5,8 +5,9 @@
 @section('content')
 
 <section class="bio">
-    <div id="legroupe">
-        <h2>Le Groupe</h2>
+    <h2>Le Groupe</h2>
+    <div class="groupe">
+        <img src="assets/img/galerie14.jpg" alt="le groupe">        
         <p>ZébraJazz est un quintet composé de 5 amis, 4 musiciens et une chanteuse, né au printemps 2018, qui propose des prestations musicales, événementiels, apéro-jazz, mariage, soirées privées... dans la région d'Aix en Provence</p>
         <p>Au tout début les 2 Richard se connaissaient déja puisqu'ils jouaient ensemble quelquesfois soit en duo soit dans des quartets ou quintets de la région.
             Puis au printemps 2018 sont arrivés Christine, la chanteuse du groupe, puis Christian le batteur, et enfin Jean-Charles, le petit dernier, contrebassiste - bassiste .

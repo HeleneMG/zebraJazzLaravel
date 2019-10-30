@@ -33,7 +33,7 @@ mybutton.addEventListener('click', function topFunction() {
 
 //FIXED NAVBAR
 function fixedNavbar() {
-    if (window.pageYOffset >= sticky) {
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200){
         navbar.classList.add("sticky");
         navbar.classList.remove("deux")
     } else {
