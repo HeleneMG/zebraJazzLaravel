@@ -18,7 +18,7 @@ var sticky = navbar.offsetTop;
 
 //TO TOP BUTTON apparition
 function scrollFunction() {
-    if (document.body.scrollTop >= 100 || document.documentElement.scrollTop >= 100) {
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
         $(mybutton).fadeIn(700);
     } else {
         $(mybutton).fadeOut(700);
