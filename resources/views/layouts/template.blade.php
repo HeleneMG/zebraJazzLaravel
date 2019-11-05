@@ -64,9 +64,9 @@
                  </li>
              </ul>
              <ul id="rights">
-                 <li>Tous droits réservés &copy; 2019</li>
+                 <li><a href="<?php echo url('/home') ?>"><button>Espace Administrateur</button></a></li>
                  <li><a href="<?php echo url('/mentions-legales') ?>">Mentions legales</a></li>
-                 <li><a href="<?php echo url('/home') ?>"><button>Admin</button></a></li>
+                 <li>Tous droits réservés &copy; 2019</li>
              </ul>
          </footer>
 

@@ -29,7 +29,7 @@
 
         <button type="submit" reset>Envoyer</button>
         <div class="obligatoire">
-            Les champs obligatoires sont marqués de *
+            Les champs marqués d'une  *  sont obligatoires
         </div>
         <div class="confirmation">
             @{{ confirmation }}
