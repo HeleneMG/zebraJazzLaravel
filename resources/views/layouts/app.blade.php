@@ -40,11 +40,11 @@
                                 <a class="nav-link" href="{{ route('login') }}">Connexion</a>
                             </li>
 
-                            <!-- @if (Route::has('register'))
+                            @if (Route::has('register'))
                             <li class="nav-item register">
                                 <a class="nav-link" href="{{ route('register') }}">Inscription</a>
                             </li>
-                            @endif -->
+                            @endif 
 
                             @else
                             <li class="nav-item dropdown">

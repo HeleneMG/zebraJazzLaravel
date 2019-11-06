@@ -49,10 +49,13 @@ h3{
     padding-top: 20px;
     text-align: center;
 }
+
+/*nav desktop*/
 nav.deux, nav.deux.sticky{
     display: none;
 }
 
+/*nav mobile*/
 nav.une {
     width: 100%;
     background-color: black;
