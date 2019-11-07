@@ -63,11 +63,12 @@
                  <li>
                      <h2>ZebraJazz</h2>
                  </li>
+                 <li class="rights">Tous droits réservés &copy; 2019</li>
+
              </ul>
-             <ul id="rights">
+             <ul class="rights">
                  <li><a href="<?php echo url('/home') ?>"><button>Espace Administrateur</button></a></li>
                  <li><a href="<?php echo url('/mentions-legales') ?>">Mentions legales</a></li>
-                 <li>Tous droits réservés &copy; 2019</li>
              </ul>
          </footer>
 

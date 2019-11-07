@@ -41,7 +41,7 @@ class ContactController extends Controller
 
         // JE REMPLIS LE TABLEAU ASSOCIATIF 
         // AVEC LES INFOS A RENVOYER AU NAVIGATEUR
-        $tabAssoJson["infoNavigateur"] = date("Y-m-d H:i:s");
+        $tabAssoJson["infoNavigateur"] = date("d-m-Y H:i:s");
 
  
         // SI JE VEUX TRAITER LE FORMULAIRE
@@ -51,7 +51,7 @@ class ContactController extends Controller
         // => ICI ON FAIT LES CONTROLES DE SECURITE
         // => CONTROLLER DANS MVC
         $validator = Validator::make($request->all(), [
-            'email'    => 'required|email|unique:contacts|max:160',
+            'email'    => 'required|email|max:160',
             'nom'      => 'required|max:160',
             'prenom'   => 'required|max:160',
             'message'  => 'required|max:1000',
@@ -59,8 +59,9 @@ class ContactController extends Controller
 
         if ($validator->fails()) 
         {
-            $tabAssoJson["erreur"] = "IL Y A DES ERREURS";
+            $tabAssoJson["erreur"] = "Merci de vérifier que tous les champs du formulaire sont renseignés";
         }
+
         else
         {
             // C'EST OK
@@ -85,7 +86,7 @@ class ContactController extends Controller
             // DANS LA CLASSE Contact.php
             // LA METHODE create VIENT DE LA CLASSE PARENTE Model
             Contact::create($tabAssoColonneValeur);
-            $tabAssoJson["confirmation"] = "Votre message a bien été envoyé";
+            $tabAssoJson["confirmation"] = "Merci, votre demande sera traitée dans les meilleurs délais";
         }
 
 

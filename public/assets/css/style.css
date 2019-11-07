@@ -212,7 +212,7 @@ form button{
     width: 50%;
     margin: 10px auto;
 }
-.confirmation{
+.confirmation, .erreur{
     text-align: center;
 }
 .obligatoire{
@@ -278,12 +278,13 @@ footer h2{
     font-size: large;
 }
 
-#rights{
+.rights{
     font-size: 1em;
     line-height: 23px;
 }
 
-#rights button{
+.rights button{
+    width: 100%;
     padding: 0;
     background-color: black;
     border: none;
@@ -291,7 +292,7 @@ footer h2{
     font-size: 1em;
     color: white;
 }
-#rights button:hover{
+.rights button:hover{
     cursor: pointer;
 }
 

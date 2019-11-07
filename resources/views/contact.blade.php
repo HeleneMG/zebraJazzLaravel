@@ -24,16 +24,19 @@
 
         <label>
             <span>Message*</span>
-            <textarea name="message" cols="10" rows="5" required placeholder="entrez votre message"></textarea>
+            <textarea name="message" cols="10" rows="5" placeholder="entrez votre message"></textarea>
         </label>
 
         <button type="submit" reset>Envoyer</button>
-        <div class="obligatoire">
-            Les champs marqués d'une  *  sont obligatoires
-        </div>
+
         <div class="confirmation">
             @{{ confirmation }}
+        </div>
+        <div class="erreur">
             @{{ erreur }}
+        </div>
+        <div class="obligatoire">
+            Les champs marqués d'une * sont obligatoires
         </div>
         @csrf
     </form>

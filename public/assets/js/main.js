@@ -33,7 +33,7 @@ mybutton.addEventListener('click', function topFunction() {
 
 //FIXED NAVBAR
 function fixedNavbar() {
-    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200){
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
         navbar.classList.add("sticky");
         navbar.classList.remove("deux")
     } else {
@@ -82,18 +82,25 @@ var app = new Vue({
                         // ON VA STOCKER LA CONFORMATION DANS UNE VARIABLE VUEJS
                         app.confirmation = reponseObjetJSON.confirmation;
                     }
-                    if (reponseObjetJSON.annonces) {
+                    if (reponseObjetJSON.erreur) {
                         // ON VA STOCKER LA CONFORMATION DANS UNE VARIABLE VUEJS
-                        app.annonces = reponseObjetJSON.annonces;
+                        app.erreur = reponseObjetJSON.erreur;
                     }
+                    if (reponseObjetJSON.contacts) {
+                        // ON VA STOCKER LA CONFiRMATION DANS UNE VARIABLE VUEJS
+                        app.contacts = reponseObjetJSON.contacts;
+                    }
+
                 });
         }
     },
+
     data: {
         // ICI JE RAJOUTE LES VARIABLES GEREES PAR VUEJS
-        annonceUpdate: null,
-        annonces: [],
+        contactUpdate: null,
+        contacts: [],
         confirmation: '',
+        erreur: '',
         message: 'Hello Vue !'
     }
 });
